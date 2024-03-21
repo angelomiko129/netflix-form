@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #575757;
+    width: 50%;
+    margin: 50px auto;
+}
+
+nav img {
+    width: 130px;
+    margin: 15px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.form-wrapper h2 {
+    font-size: 2em;
+    margin: 10px 10%;
+    color: #fff;
+}
+
+form {
+    width: 100%;
+}
+
+.form-control input {
+    width: 75%;
+    color: #fff;
+    background-color: #333333;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 15%;
+    outline: none;
+    font-size: 1em;
+}
+
+.form-wrapper button {
+    width: 75%;
+    color: #fff;
+    background-color: #e50914;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 15%;
+    outline: none;
+    font-size: 1em;
+}
+
+.form-control input,
+.form-wrapper button {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.form-wrapper button {
+    white-space: nowrap;
+}
+
+#or {
+    width: 75%;
+    margin: 10px 15%;
+    text-align: center;
+}
+
+#code {
+    background-color: #464646;
+}
+
+.remember-me label {
+    color: #575757;
+}
+
+.form-help {
+    width: 65%;
+    height: 50%; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.form-help p {
+    flex: 1;
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.form-wrapper p > a, .form-wrapper a {
+    color: #fff;
+}
+
+.form-wrapper small a {
+    color: #005cbf;
+}
+
+.remember-me, .form-help > a {
+    flex-basis: 50%;
+}
+
+.form-help > a {
+    text-align: center;
+}
+
+.form-help small {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+    nav img {
+        width: 110px;
+        margin: 15px 30px;
+    }
+    .form-wrapper h2 {
+        margin: 0;
+    }
+    .form-control input, .form-wrapper button, #or {
+        width: calc(100% - 30px);
+        margin: 10px 15px;  
+    }
+}
